@@ -5,15 +5,15 @@ import Logo from '../assets/images/Logo.png';
 
 const Navbar = () => {
   return (
-    <Stack>
+    <Stack direction="row" className='flex justify-around px-[20px]' sx={{ gap: {sm: '122px', xs: '40px'}, mt: {sm: '32px', xs: '20px'}, justifyContent: 'none'}}>
         <Link to="/">
         <img src={Logo} alt="logo" className='w-[48px] h-[48px] my-0 mx-[20px]'/>
         </Link>
-        <Stack>
-            <Link to="/" className='no-underline'>
+        <Stack direction="row" className='flex items-end gap-2 text-[20px]'>
+            <Link to="/" className='no-underline text-blue-500 border-b-[3px] border-b-blue-500'>
             Home
             </Link>
-            <a href="#exercises" className='text-red-500'>Exercises</a>
+            <a href="#exercises" className='text-blue-500 no-underline'>Exercises</a>
         </Stack>
     </Stack>
   )
