@@ -10,10 +10,10 @@ const Navbar = () => {
         <img src={Logo} alt="logo" className='w-[48px] h-[48px] my-0 mx-[20px]'/>
         </Link>
         <Stack direction="row" className='flex items-end gap-2 text-[20px]'>
-            <Link to="/" className='no-underline text-blue-500 border-b-[3px] border-b-blue-500'>
+            <Link to="/" className='no-underline text-green-800 border-b-[3px] border-b-green-800'>
             Home
             </Link>
-            <a href="#exercises" className='text-blue-500 no-underline'>Exercises</a>
+            <a href="#exercises" className='text-green-800 no-underline'>Exercises</a>
         </Stack>
     </Stack>
   )
