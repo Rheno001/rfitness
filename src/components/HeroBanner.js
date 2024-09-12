@@ -4,20 +4,23 @@ import HeroBannerImage from '../assets/images/banner.png';
 
 const HeroBanner = () => {
   return (
-    <Box className='flex justify-center' sx={{
-        mt: {lg: '50px', xs: '70px'}, ml: {sm: '50px'} 
-    }} position= 'relative' p= '20px'>
-        <div className='mt-[100px]'>
-        <Typography className='text-green-800' fontWeight="600" sx= {{ fontSize: {lg: "30px", xs: "25"}}}>Fitness club</Typography>
-        <Typography fontWeight='700' className='text-green-700' sx= {{ fontSize: {lg: "20px", xs: "15"}}}>Sweat, Smile <br />and Repeat</Typography>
-        <Typography className='text-green-800'mb={2} lineHeight='35px' fontWeight='600' sx= {{ fontSize: {lg: "30px", xs: "25"}}}>Check out the most effective exercises</Typography>
-        <Button color='success' variant='contained' href='#exercises' sx={{padding: '15px', fontSize: {lg: '15px', xs: '10px'}}}>Explore Exercises</Button>
-        <Typography fontWeight='600' color='#ff2625' position='absolute'  fontSize='200px' sx={{opacity: 0.1, display: {lg: 'block', xs:'none'}}}>
-          Exercise
-        </Typography>
-        </div>
-        <div><img src={HeroBannerImage} alt="banner" position='relative' className='hero-banner-img h-3/4' /></div>
-    </Box>
+    <Box sx={{ mt: { lg: '212px', xs: '70px' }, ml: { sm: '50px' } }} position="relative" p="20px">
+    <Typography className='text-green-800' fontWeight="600" fontSize="26px">Fitness Club</Typography>
+    <Typography fontWeight={700} className='text-green-700' sx={{ fontSize: { lg: '44px', xs: '40px' } }} mb="23px" mt="30px">
+      Sweat, Smile <br />
+      And Repeat
+    </Typography>
+    <Typography fontSize="22px" fontFamily="Alegreya" lineHeight="35px" className='text-green-800'>
+      Check out the most effective exercises personalized to you
+    </Typography>
+    <Stack>
+      <a href="#exercises" style={{ marginTop: '45px', textDecoration: 'none', width: '200px', textAlign: 'center', background: '#123024', padding: '14px', fontSize: '22px', textTransform: 'none', color: 'white', borderRadius: '4px' }}>Explore Exercises</a>
+    </Stack>
+    <Typography fontWeight={600} color="#123024" sx={{ opacity: '0.1', display: { lg: 'block', xs: 'none' }, fontSize: '200px' }}>
+      Exercise
+    </Typography>
+    <img src={HeroBannerImage} alt="hero-banner" className="hero-banner-img" />
+  </Box>
   )
 }
 

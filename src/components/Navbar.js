@@ -5,17 +5,21 @@ import Logo from '../assets/images/Logo.png';
 
 const Navbar = () => {
   return (
-    <Stack direction="row" className='flex justify-around px-[20px]' sx={{ gap: {sm: '122px', xs: '40px'}, mt: {sm: '32px', xs: '20px'}, justifyContent: 'none'}}>
-        <Link to="/">
-        <img src={Logo} alt="logo" className='w-[48px] h-[48px] my-0 mx-[20px]'/>
-        </Link>
-        <Stack direction="row" className='flex items-end gap-2 text-[20px]'>
-            <Link to="/" className='no-underline text-green-800 border-b-[3px] border-b-green-800'>
-            Home
-            </Link>
-            <a href="#exercises" className='text-green-800 no-underline'>Exercises</a>
-        </Stack>
+    <Stack direction="row" justifyContent="space-around" sx={{ gap: { sm: '123px', xs: '40px' }, mt: { sm: '32px', xs: '20px' }, justifyContent: 'none' }} px="20px">
+    <Link to="/">
+      <img src={Logo} alt="logo" style={{ width: '48px', height: '48px', margin: '0px 20px' }} />
+    </Link>
+    <Stack
+      direction="row"
+      gap="40px"
+      fontFamily="Alegreya"
+      fontSize="24px"
+      alignItems="flex-end"
+    >
+      <Link to="/" className='text-green-800 border-b-2 border-green-800'>Home</Link>
+      <a href="#exercises" className='text-green-800'>Exercises</a>
     </Stack>
+  </Stack>
   )
 }
 
